@@ -1,0 +1,109 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "genre": "Drama",
+      "releaseDate": "1994-09-23",
+      "rating": 9.3
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "genre": "Crime, Drama",
+      "releaseDate": "1972-03-24",
+      "rating": 9.2
+    },
+    {
+      "id": 3,
+      "title": "The Godfather: Part II",
+      "genre": "Crime, Drama",
+      "releaseDate": "1974-12-20",
+      "rating": 9.0
+    },
+    {
+      "id": 4,
+      "title": "The Dark Knight",
+      "genre": "Action, Crime, Drama",
+      "releaseDate": "2008-07-18",
+      "rating": 9.0
+    },
+    {
+      "id": 5,
+      "title": "12 Angry Men",
+      "genre": "Drama",
+      "releaseDate": "1957-04-10",
+      "rating": 8.9
+    },
+    {
+      "id": 6,
+      "title": "Schindler's List",
+      "genre": "Biography, Drama, History",
+      "releaseDate": "1993-12-15",
+      "rating": 8.9
+    },
+    {
+      "id": 7,
+      "title": "The Lord of the Rings: The Return of the King",
+      "genre": "Action, Adventure, Drama",
+      "releaseDate": "2003-12-17",
+      "rating": 8.9
+    },
+    {
+      "id": 8,
+      "title": "Pulp Fiction",
+      "genre": "Crime, Drama",
+      "releaseDate": "1994-10-14",
+      "rating": 8.9
+    },
+    {
+      "id": 9,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "genre": "Action, Adventure, Drama",
+      "releaseDate": "2001-12-19",
+      "rating": 8.8
+    },
+    {
+      "id": 10,
+      "title": "The Good, the Bad and the Ugly",
+      "genre": "Western",
+      "releaseDate": "1966-12-23",
+      "rating": 8.8
+    },
+    {
+      "id": 11,
+      "title": "Forrest Gump",
+      "genre": "Drama, Romance",
+      "releaseDate": "1994-07-06",
+      "rating": 8.8
+    },
+    {
+      "id": 12,
+      "title": "Inception",
+      "genre": "Action, Adventure, Sci-Fi",
+      "releaseDate": "2010-07-16",
+      "rating": 8.7
+    },
+    {
+      "id": 13,
+      "title": "The Lord of the Rings: The Two Towers",
+      "genre": "Action, Adventure, Drama",
+      "releaseDate": "2002-12-18",
+      "rating": 8.7
+    },
+    {
+      "id": 14,
+      "title": "The Matrix",
+      "genre": "Action, Sci-Fi",
+      "releaseDate": "1999-03-31",
+      "rating": 8.7
+    },
+    {
+      "id": 15,
+      "title": "Fight Club",
+      "genre": "Drama",
+      "releaseDate": "1999-10-15",
+      "rating": 8.7
+    }
+  ]
+}
