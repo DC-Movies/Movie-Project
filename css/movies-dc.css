@@ -1,15 +1,18 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: darkgrey;
-    width: 100%;
     border-bottom: 1px solid black;
 }
 .card {
-    height: 250px;
-    width: 150px;
+    height: 375px;
+    width: 300px;
     background-color: darkgrey;
+}
+.card-layout {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 15px;
+
 }
 .column.right {
     display: flex;
@@ -29,18 +32,55 @@
     width: 25%;
 
 }
-.open {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    width: 25%;
-    height: 300px;
-}
 .footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: darkgrey;
-    width: 100%;
     border-top: 1px solid black;
+    transition: all ease .3s;
+    flex:0 1 75px;
+}
+
+.footer.open {
+    flex: 0 1 300px;
+}
+.movies-cards {
+    width: 100%;
+    background-color: white ;
+    border-right: .5px solid #373F49 ;
+    padding: 20px;
+    gap: 15px;
+    position:relative;
+
+}
+
+.mask {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow-y: auto;
+}
+.img-wrapper {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.remove {
+    border-radius: 9999px;
+}
+.column.stretch {
+    display: flex;
+    align-items: stretch;
 }

@@ -1,4 +1,4 @@
-import {getMovies} from "./movies-module.js"
+import {getMovies, renderMovies} from "./movies-module.js"
 
 
 (async()=>{
@@ -7,30 +7,44 @@ import {getMovies} from "./movies-module.js"
     console.log(movies);
 
 
+    let footerToggle = document.querySelector('#toggle');
+    footerToggle.addEventListener('click', function(){
+       let footer = document.querySelector('.footer');
+       footer.classList.toggle('open');
+    });
+    const cards = document.querySelector('#cards');
+
+
+    movies.forEach(function(movies){
+        renderMovies(movies, cards)
+    });
+
+
+
 })();
 
 
 
 
 
-let pageWrapper = document.querySelector('.page-wrapper');
-
-let dropdowns = document.querySelectorAll('[data-dropdown="parent"]');
-dropdowns.forEach(function(dropdown){
-    let toggle = dropdown.querySelector('[data-dropdown="toggle"]');
-    toggle.addEventListener('click', function(){
-        dropdowns.forEach(function(element){
-            if(element.classList.contains('open') && element !== dropdown) {
-                element.classList.remove('open')
-            }
-        })
-        dropdown.classList.toggle('open');
-    });
-});
-pageWrapper.addEventListener('click', function(event){
-    if (!event.target.closest('[data-dropdown="parent"]')) {
-        dropdowns.forEach(function(dropdown){
-            dropdown.classList.remove('open');
-        });
-    }
-})
+// let pageWrapper = document.querySelector('.page-wrapper');
+//
+// let dropdowns = document.querySelectorAll('[data-dropdown="parent"]');
+// dropdowns.forEach(function(dropdown){
+//     let toggle = dropdown.querySelector('[data-dropdown="toggle"]');
+//     toggle.addEventListener('click', function(){
+//         dropdowns.forEach(function(element){
+//             if(element.classList.contains('open') && element !== dropdown) {
+//                 element.classList.remove('open')
+//             }
+//         })
+//         dropdown.classList.toggle('open');
+//     });
+// });
+// pageWrapper.addEventListener('click', function(event){
+//     if (!event.target.closest('[data-dropdown="parent"]')) {
+//         dropdowns.forEach(function(dropdown){
+//             dropdown.classList.remove('open');
+//         });
+//     }
+// })
