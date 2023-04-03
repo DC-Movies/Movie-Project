@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="css/movies-dc.css">
 </head>
 <body>
+<div class="page-wrapper">
+    <div class="container grow">
+        <div class="header">
+            <div class="column left">
+                <h1>Movies</h1>
+            </div>
+            <div class="column right">
+                <label for="searchMovie">Search Movie</label>
+                <input type="text" id="searchMovie">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="card" class="card"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer grow">
+            <div class="row grow">
+                <div class="column left">
+                    <button id="addMovie">Add Movie</button>
+                </div>
+                <div data-dropdown="parent" class="column center parent">
+                    <button data-dropdown="toggle" id="toggle">/\</button>
+                </div>
+                <div class="column right">
+                    <button id="removeMovie">Remove Movie</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script type="module" src="js/movies-js-dc.js"></script>
 </body>

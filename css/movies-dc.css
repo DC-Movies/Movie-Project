@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgrey;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.card {
+    height: 250px;
+    width: 150px;
+    background-color: darkgrey;
+}
+.column.right {
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+}
+.column.left {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+}
+.column.center.parent {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: red;
+    width: 25%;
+
+}
+.open {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 25%;
+    height: 300px;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgrey;
+    width: 100%;
+    border-top: 1px solid black;
+}
