@@ -84,3 +84,13 @@
     display: flex;
     align-items: stretch;
 }
+.button-toggle {
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 24px;
+    transition: all ease .4s;
+}
+.button-toggle.flip {
+    rotate: 180deg;
+    transition: all ease .4s;
+}
