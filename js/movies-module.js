@@ -19,6 +19,7 @@ export const renderMovies = async (movie, parent) => {
     const rating = movie.rating;
     const releaseDate = movie.releaseDate;
     const genre = movie.genre;
+    const movieId = movie.id;
     const element = document.createElement('div');
 
     element.classList.add('card');
@@ -45,9 +46,10 @@ export const renderMovies = async (movie, parent) => {
         
     `;
 
-    element.querySelector('button').addEventListener('click', function () {
+    element.querySelector('.remove').addEventListener('click', function () {
         element.remove();
-    })
+        deleteMovies(movieId);
+    });
 
     parent.appendChild(element);
 }
@@ -68,3 +70,23 @@ export const addMovie = async (movie) => {
         console.log(error);
     }
 }
+
+export const deleteMovies = async (id) => {
+    try {
+        if (!id) {
+            throw new Error('You must provide an id');
+        }
+        let url = `http://localhost:3000/movies/${id}`;
+        let options = {
+            method: "DELETE",
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }
+        let response = await fetch(url, options);
+        let data = await response.json();
+        return data;
+    } catch(error){
+        console.log(error);
+    }
+};
