@@ -20,10 +20,15 @@
     padding: 15px;
 }
 .column.left {
+    display: none;
+}
+
+.display {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     padding: 15px;
 }
+
 .column.center.parent {
     display: flex;
     align-items: center;
@@ -93,4 +98,19 @@
 .button-toggle.flip {
     rotate: 180deg;
     transition: all ease .4s;
+}
+
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+    background-repeat: no-repeat;
+    background-position: center;
 }
