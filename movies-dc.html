@@ -9,8 +9,8 @@
 </head>
 <body>
 <div class="page-wrapper">
-    <div class="container grow">
-        <div class="header">
+    <div class="container header">
+        <div class="row full-width">
             <div class="column left">
                 <h1>Movies</h1>
             </div>
@@ -18,26 +18,24 @@
                 <label for="searchMovie">Search Movie</label>
                 <input type="text" id="searchMovie">
             </div>
-
         </div>
-        <div class="row">
-            <div class="column">
-                <div id="card" class="card"></div>
+    </div>
+    <div class="container grow">
+        <div class="row grow">
+            <div class="column movies-cards">
+                <div id='cards' class="mask card-layout">
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="footer grow">
-            <div class="row grow">
-                <div class="column left">
-                    <button id="addMovie">Add Movie</button>
-                </div>
-                <div data-dropdown="parent" class="column center parent">
-                    <button data-dropdown="toggle" id="toggle">/\</button>
-                </div>
-                <div class="column right">
-                    <button id="removeMovie">Remove Movie</button>
-                </div>
+    <div class="container footer">
+        <div class="row grow">
+            <div class="column left">
+                <button id="addMovie">Add Movie</button>
+            </div>
+            <div class="column center parent">
+                <button id="toggle">/\</button>
             </div>
         </div>
     </div>
