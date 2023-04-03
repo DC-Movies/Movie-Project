@@ -1,4 +1,4 @@
-import {getMovies, renderMovies} from "./movies-module.js"
+import {getMovies, renderMovies, addMovie} from "./movies-module.js"
 
 
 (async()=>{
@@ -11,6 +11,8 @@ import {getMovies, renderMovies} from "./movies-module.js"
     footerToggle.addEventListener('click', function(){
        let footer = document.querySelector('.footer');
        footer.classList.toggle('open');
+       footerToggle.classList.toggle('flip')
+
     });
     const cards = document.querySelector('#cards');
 
@@ -19,6 +21,7 @@ import {getMovies, renderMovies} from "./movies-module.js"
         renderMovies(movies, cards)
     });
 
+    let newMovie = await addMovie();
 
 
 })();

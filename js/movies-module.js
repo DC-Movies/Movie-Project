@@ -51,3 +51,20 @@ export const renderMovies = async (movie, parent) => {
 
     parent.appendChild(element);
 }
+
+export const addMovie = async (movie) => {
+    try {
+        let url = `http://localhost:3000/movies`;
+        let options = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(movie)
+        }
+        let response = await fetch(url, options);
+        return await response.json();
+    }catch(error){
+        console.log(error);
+    }
+}
