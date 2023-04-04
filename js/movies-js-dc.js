@@ -43,10 +43,12 @@ import {getMovies, renderMovies, addMovie} from "./movies-module.js"
         const title = document.querySelector('#title').value;
         const genre = document.querySelector('#genre').value;
         const rating = parseFloat(document.querySelector('#rating').value);
+        const releaseDate = document.querySelector('#rel-date').value;
         let movieData = {
             title,
             genre,
-            rating
+            rating,
+            releaseDate
         }
         let result = await addMovie(movieData);
     });
