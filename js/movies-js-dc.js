@@ -3,8 +3,7 @@ import {getMovies, renderMovies, addMovie} from "./movies-module.js"
 
 (async()=>{
 
-    // Loading Screen
-
+    // loading screen
     function onReady(callback) {
         let intervalId = window.setInterval(function() {
             if (document.getElementsByTagName('body')[0] !== undefined) {
@@ -21,13 +20,11 @@ import {getMovies, renderMovies, addMovie} from "./movies-module.js"
         setVisible('#loading', false);
     });
 
-    // End Loading Screen -^-
-
-
+    // display movies
     let movies = await getMovies();
     console.log(movies);
 
-
+    // footer pop up
     let addMovieToggle = document.querySelector('#addInterface');
     let footerToggle = document.querySelector('#toggle');
     footerToggle.addEventListener('click', function(){
@@ -37,13 +34,11 @@ import {getMovies, renderMovies, addMovie} from "./movies-module.js"
        addMovieToggle.classList.toggle('left')
     });
 
+    // adding new movie to card and DOM
     const cards = document.querySelector('#cards');
-
-
     movies.forEach(function(movies){
         renderMovies(movies, cards)
     });
-
     document.querySelector('#addMovie').addEventListener('click', async function(){
         const title = document.querySelector('#title').value;
         const genre = document.querySelector('#genre').value;
@@ -55,6 +50,9 @@ import {getMovies, renderMovies, addMovie} from "./movies-module.js"
         }
         let result = await addMovie(movieData);
     });
+
+    // genre links
+
 
 
 
