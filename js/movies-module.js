@@ -65,7 +65,9 @@ export const addMovie = async (movie) => {
             body: JSON.stringify(movie)
         }
         let response = await fetch(url, options);
-        return await response.json();
+        let newMovie = await response.json();
+        renderMovies(newMovie, document.querySelector('#cards'));
+        return newMovie;
     }catch(error){
         console.log(error);
     }

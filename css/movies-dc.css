@@ -20,9 +20,34 @@
     padding: 15px;
 }
 .column.left {
-    display: none;
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
 }
-
+.column.left.foot {
+    display: none;
+    transition: all ease .3s;
+}
+.column{
+    display:flex;
+    justify-content: center;
+}
+.options {
+    padding: 10px;
+    border: 2px solid red;
+    margin-bottom: 5px;
+    border-radius: 999px;
+}
+.options2 {
+    padding: 5px;
+    width: 65%;
+    border: 2px solid red;
+    border-radius: 999px;
+}
+.align {
+    display: flex;
+    align-self: center;
+}
 .display {
     display: flex;
     align-items: flex-end;
@@ -47,6 +72,7 @@
 
 .footer.open {
     flex: 0 1 300px;
+    transition: all ease .3s;
 }
 .movies-cards {
     width: 100%;
