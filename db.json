@@ -76,6 +76,12 @@
       "genre": "Drama",
       "releaseDate": "1999-10-15",
       "rating": 8.7
+    },
+    {
+      "title": "Hot Rod",
+      "genre": "Comedy",
+      "rating": 5,
+      "id": 16
     }
   ]
 }

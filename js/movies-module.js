@@ -92,3 +92,5 @@ export const deleteMovies = async (id) => {
         console.log(error);
     }
 };
+
+
