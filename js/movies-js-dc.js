@@ -13,16 +13,15 @@ import {getMovies, renderMovies, addMovie} from "./movies-module.js"
             }
         }, 2000);
     }
-
     function setVisible(selector, visible) {
         document.querySelector(selector).style.display = visible ? 'block' : 'none';
     }
-
     onReady(function() {
         setVisible('.page', true);
         setVisible('#loading', false);
     });
 
+    // End Loading Screen -^-
 
 
     let movies = await getMovies();
@@ -44,8 +43,6 @@ import {getMovies, renderMovies, addMovie} from "./movies-module.js"
     movies.forEach(function(movies){
         renderMovies(movies, cards)
     });
-
-    let newMovie = await addMovie();
 
     document.querySelector('#addMovie').addEventListener('click', async function(){
         const title = document.querySelector('#title').value;
