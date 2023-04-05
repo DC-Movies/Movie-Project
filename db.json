@@ -1,20 +1,6 @@
 {
   "movies": [
     {
-      "id": 1,
-      "title": "The Shawshank Redemption",
-      "genre": "Drama",
-      "releaseDate": "1994-09-23",
-      "rating": 9.3
-    },
-    {
-      "id": 6,
-      "title": "Schindler's List",
-      "genre": "Biography, Drama, History",
-      "releaseDate": "1993-12-15",
-      "rating": 8.9
-    },
-    {
       "id": 7,
       "title": "The Lord of the Rings: The Return of the King",
       "genre": "Action, Adventure, Drama",

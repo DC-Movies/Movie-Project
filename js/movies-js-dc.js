@@ -1,4 +1,4 @@
-import {getMovies, renderMovies, addMovie} from "./movies-module.js"
+import {getMovies, renderMovies, addMovie, changeRating} from "./movies-module.js"
 
 
 (async()=>{
@@ -53,8 +53,11 @@ import {getMovies, renderMovies, addMovie} from "./movies-module.js"
         let result = await addMovie(movieData);
     });
 
-    // genre links
-
+    document.querySelector('.update-rating-btn').addEventListener('click', async function () {
+        const rating = parseFloat(document.querySelector('#updateRating').value);
+        const title = document.querySelector('#card-title').value;
+        let result = await changeRating(rating, title);
+    })
 
 
 
